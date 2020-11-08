@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>BlockchainAPI.Transactions</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Implementations" />
+      <Folder Include="Interfaces" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="2.12.0-beta1" />
+    </ItemGroup>
+
+</Project>
