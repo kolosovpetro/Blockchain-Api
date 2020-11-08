@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlockchainAPI.Abstractions
@@ -13,7 +12,7 @@ namespace BlockchainAPI.Abstractions
         Task<IActionResult> GetBalance(string address);
         
         // post
-        Task<IActionResult> MineBlock();
+        Task<IActionResult> MineBlock(string address);
         
         // get
         Task<IActionResult> IsValidChain();
