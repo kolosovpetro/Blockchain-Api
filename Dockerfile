@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["BlockchainAPI.Core/BlockchainAPI.Core.csproj", "BlockchainAPI.Core/"]
-COPY ["BlockchainAPI.Models/BlockchainAPI.Models.csproj", "BlockchainAPI.Models/"]
+COPY ["BlockchainAPI.Responses/BlockchainAPI.Responses.csproj", "BlockchainAPI.Responses/"]
 COPY ["BlockchainAPI.Blockchain/BlockchainAPI.Blockchain.csproj", "BlockchainAPI.Blockchain/"]
 COPY ["BlockchainAPI.Block/BlockchainAPI.Block.csproj", "BlockchainAPI.Block/"]
 COPY ["BlockchainAPI.Transactions/BlockchainAPI.Transactions.csproj", "BlockchainAPI.Transactions/"]
