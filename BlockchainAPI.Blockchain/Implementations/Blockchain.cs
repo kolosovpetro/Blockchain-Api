@@ -10,19 +10,17 @@ namespace BlockchainAPI.Blockchain.Implementations
 {
     public class Blockchain : IBlockchain
     {
-        private readonly int _proofOfWorkDifficulty;
-        private readonly double _miningReward;
+        private readonly int _proofOfWorkDifficulty = 2;
+        private readonly double _miningReward = 10;
         private List<Transaction> _pendingTransactions;
         private readonly BlockRepository _blockRepository;
 
         public List<BlockchainAPI.Block.Implementations.Block> Chain { get; }
 
-        public Blockchain(int proofOfWorkDifficulty, double miningReward)
+        public Blockchain()
         {
             var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
             _blockRepository = new BlockRepository(connectionString);
-            _proofOfWorkDifficulty = proofOfWorkDifficulty;
-            _miningReward = miningReward;
             Chain = _blockRepository.GetAll().Result;
             _pendingTransactions = new List<Transaction>();
         }

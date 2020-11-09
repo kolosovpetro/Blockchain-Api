@@ -29,7 +29,7 @@ namespace BlockchainAPI.TestUI
             // //     Console.WriteLine(block.Transactions.Count);
             // // }
 
-            var blockChain = new Blockchain.Implementations.Blockchain(2, 10);
+            var blockChain = new Blockchain.Implementations.Blockchain();
             // const string address = "address 1";
             // await blockChain.MineBlock(address);
             // Console.WriteLine($"Current balance: {blockChain.GetBalance(address)}");

@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainAPI.Block", "Bloc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainAPI.Blockchain", "BlockchainAPI.Blockchain\BlockchainAPI.Blockchain.csproj", "{5C6D0B74-295A-4297-9E73-CDB98B1858BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainAPI.Models", "BlockchainAPI.Models\BlockchainAPI.Models.csproj", "{7712778D-03E4-49F7-9235-1B94E82F650D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainAPI.Responses", "BlockchainAPI.Responses\BlockchainAPI.Responses.csproj", "{7712778D-03E4-49F7-9235-1B94E82F650D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainAPI.Repository", "BlockchainAPI.Repository\BlockchainAPI.Repository.csproj", "{C202D1F1-ABC8-4825-9415-6BD12D33CCDB}"
 EndProject

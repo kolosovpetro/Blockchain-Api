@@ -16,7 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BlockchainAPI.Blockchain\BlockchainAPI.Blockchain.csproj" />
-      <ProjectReference Include="..\BlockchainAPI.Models\BlockchainAPI.Models.csproj" />
+      <ProjectReference Include="..\BlockchainAPI.Responses\BlockchainAPI.Responses.csproj" />
     </ItemGroup>
 
 
