@@ -6,15 +6,15 @@ namespace BlockchainAPI.Abstractions
     public interface IBlockchainController
     {
         // get
-        Task<IActionResult> GetAllBlocks();
+        IActionResult GetAllBlocks();
         
         // get
-        Task<IActionResult> GetBalance(string address);
+        IActionResult GetBalance(string address);
         
         // post
         Task<IActionResult> MineBlock(string address);
         
         // get
-        Task<IActionResult> IsValidChain();
+        IActionResult IsValidChain();
     }
 }
