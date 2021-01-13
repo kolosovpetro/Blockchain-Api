@@ -16,7 +16,7 @@ namespace BlockchainAPI.Controllers
         /// <summary>
         /// Returns the list of all blocks in blockchain.
         /// </summary>
-        [HttpGet("Blockchain", Name = "GetAllBlocks")]
+        [HttpGet("blockchain", Name = "GetAllBlocks")]
         [SwaggerOperation(Summary = "Returns the list of all blocks in blockchain.")]
         public IActionResult GetAllBlocks()
         {
@@ -26,7 +26,7 @@ namespace BlockchainAPI.Controllers
         /// <summary>
         /// Returns balance of particular miner address. Address is a string. 
         /// </summary>
-        [HttpGet("GetBalance/{address}", Name = "GetBalance")]
+        [HttpGet("blockchain/{address}", Name = "GetBalance")]
         [SwaggerOperation(Summary = "Returns balance of particular miner address. Address is a string.")]
         public IActionResult GetBalance(string address)
         {
@@ -43,7 +43,7 @@ namespace BlockchainAPI.Controllers
         /// Mines new block and creates a transaction to particular miner address. Keep the address in order
         /// to check balance later.
         /// </summary>
-        [HttpPost("MineBlock/{address}", Name = "MineBlock")]
+        [HttpPost("blockchain/{address}", Name = "MineBlock")]
         [SwaggerOperation(Summary =
             "Mines new block and creates a transaction to particular miner address. " +
             "Keep the address in order to check balance later.")]
@@ -62,7 +62,7 @@ namespace BlockchainAPI.Controllers
         /// <summary>
         /// Checks whenever blockchain is valid.
         /// </summary>
-        [HttpGet("IsValidChain", Name = "IsValidChain")]
+        [HttpGet("blockchain/validate", Name = "IsValidChain")]
         [SwaggerOperation(Summary = "Checks whenever blockchain is valid.")]
         public IActionResult IsValidChain()
         {
